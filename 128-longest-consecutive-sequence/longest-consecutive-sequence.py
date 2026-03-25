@@ -1,0 +1,15 @@
+class Solution(object):
+    def longestConsecutive(self,nums):
+        hashmap = {}    
+        for num in nums:
+            hashmap[num] = True
+        longest = 0  
+        for num in hashmap:
+            if num - 1 not in hashmap:
+                current = num
+                length = 1
+                while current + 1 in hashmap:
+                    current += 1
+                    length += 1
+                longest = max(longest, length)
+        return longest    

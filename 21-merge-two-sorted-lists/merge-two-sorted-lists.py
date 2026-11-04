@@ -12,7 +12,7 @@ class Solution(object):
         """
         dummy=tail=ListNode()
         while l1 and l2:
-            if l1.val <= l2.val:
+            if l1.val<=l2.val:
                 tail.next=l1
                 l1=l1.next
             else:
@@ -21,3 +21,4 @@ class Solution(object):
             tail=tail.next
         tail.next=l1 if l1 else l2
         return dummy.next
+        

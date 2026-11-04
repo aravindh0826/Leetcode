@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         dummy=ListNode(0,head)
-        prev=dummy  
+        prev=dummy
         for _ in range(left-1):
             prev=prev.next
         cur=prev.next

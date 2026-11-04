@@ -9,10 +9,9 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        l=head
-        s=head
-        while l is not None and l.next is not None:
-            s=s.next
-            l=l.next.next
-        return s
+        slow=fast=head
+        while fast and fast.next:
+            slow=slow.next
+            fast=fast.next.next
+        return slow
         

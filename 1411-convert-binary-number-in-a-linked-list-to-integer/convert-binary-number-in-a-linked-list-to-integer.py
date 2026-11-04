@@ -9,10 +9,8 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: int
         """
-        res=0
-        temp=head
-        while temp:
-            res=res*2+temp.val
-            temp=temp.next
-        return res
-
+        num=0
+        while head:
+            num=num*2+(head.val)
+            head=head.next
+        return num

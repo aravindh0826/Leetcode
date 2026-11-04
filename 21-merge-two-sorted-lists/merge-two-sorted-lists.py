@@ -10,7 +10,7 @@ class Solution(object):
         :type l2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        dummy=tail=ListNode()
+        dummy=tail=ListNode(0)
         while l1 and l2:
             if l1.val<=l2.val:
                 tail.next=l1

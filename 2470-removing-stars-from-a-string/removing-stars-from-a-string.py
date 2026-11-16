@@ -8,8 +8,8 @@ class Solution(object):
         for i in s:
             if i=="*":
                 s2.pop()
-            else:   
-                s2.append(i)
+                continue
+            s2.append(i)
         return "".join(s2)
             
 

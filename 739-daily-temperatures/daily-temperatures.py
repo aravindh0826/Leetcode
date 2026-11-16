@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def dailyTemperatures(self, temperatures):
         result = [0] * len(temperatures)
         stack = []
